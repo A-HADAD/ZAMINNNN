@@ -1,1 +1,17 @@
-apply plugin: 'com.android.application'\n\nandroid {\n    compileSdkVersion 31\n    defaultConfig {\n        applicationId "com.example.app"\n        minSdkVersion 21\n        targetSdkVersion 31\n        versionCode 1\n        versionName "1.0"\n    }\n    buildTypes {\n        release {\n            minifyEnabled false\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\n        }\n    }\n}\n\ndependencies {\n    implementation 'androidx.appcompat:appcompat:1.3.1'\n    implementation 'com.google.android.material:material:1.4.0'\n    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'\n}
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.0'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
