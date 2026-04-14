@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAMINNNN App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+        .app-container {
+            background: #1a1a1a;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 30px rgba(255, 176, 0, 0.3);
+            max-width: 400px;
+            width: 90%;
+        }
+        
+        .app-title {
+            text-align: center;
+            color: #FFB000;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px #FFB000;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        
+        .btn {
+            width: 80px;
+            height: 80px;
+            background: #2a2a2a;
+            border: 2px solid #FFB000;
+            color: #FFB000;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: auto;
+        }
+        
+        .btn:hover {
+            background: #FFB000;
+            color: #1a1a1a;
+            transform: scale(1.1);
+        }
+        
+        .btn:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="app-title">ZAMINNNN</div>
+        <div class="grid">
+            <button class="btn" onclick="alert('Button 1 clicked!')">1</button>
+            <button class="btn" onclick="alert('Button 2 clicked!')">2</button>
+            <button class="btn" onclick="alert('Button 3 clicked!')">3</button>
+        </div>
+    </div>
+</body>
+</html>
